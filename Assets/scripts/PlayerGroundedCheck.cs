@@ -18,7 +18,10 @@ public class PlayerGroundedCheck : MonoBehaviour
         {
             return;
         }
-        playerController.SetGroundedState(true);
+        if (other.gameObject.tag == "grounded")
+        {
+            playerController.SetGroundedState(true);
+        }
     }
     void OnTriggerExit(Collider other)
     {
@@ -26,7 +29,10 @@ public class PlayerGroundedCheck : MonoBehaviour
         {
             return;
         }
-        playerController.SetGroundedState(false);
+        if (other.gameObject.tag == "grounded")
+        {
+            playerController.SetGroundedState(false);
+        }
     }
     void OnTriggerStay(Collider other)
     {
@@ -34,7 +40,10 @@ public class PlayerGroundedCheck : MonoBehaviour
         {
             return;
         }
-        playerController.SetGroundedState(true);
+        if (other.gameObject.tag == "grounded")
+        {
+            playerController.SetGroundedState(true);
+        }
     }
 
     void OnCollisionEnter(Collision collision)
@@ -44,7 +53,10 @@ public class PlayerGroundedCheck : MonoBehaviour
         {
             return;
         }
-        playerController.SetGroundedState(true);
+        if (collision.gameObject.tag == "grounded")
+        {
+            playerController.SetGroundedState(true);
+        }
     }
     void OnCollisionStay(Collision collision)
     {
@@ -52,7 +64,10 @@ public class PlayerGroundedCheck : MonoBehaviour
         {
             return;
         }
-        playerController.SetGroundedState(true);
+        if (collision.gameObject.tag == "grounded")
+        {
+            playerController.SetGroundedState(true);
+        }
     }
     void OnCollisionExit(Collision collision)
     {
@@ -60,6 +75,9 @@ public class PlayerGroundedCheck : MonoBehaviour
         {
             return;
         }
-        playerController.SetGroundedState(false);
+        if (collision.gameObject.tag == "grounded")
+        {
+            playerController.SetGroundedState(false);
+        }
     }
 }

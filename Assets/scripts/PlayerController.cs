@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviourPunCallbacks , IDamagable
 {
     [SerializeField] Image barradevida;
     [SerializeField] GameObject ui;
-
+    
     [SerializeField] GameObject CameraHolder;
 
     [SerializeField] float MouseSensitivity, sprintSpeed, WalkSpeed, JumpForce, smoothTime;
