@@ -6,7 +6,7 @@ using Photon.Pun;
 public class SingleShotGun : Gun
 {
     [SerializeField] Camera cam;
-
+    
     [SerializeField] GameObject crosshair;
     private bool canshoot = true;
 
@@ -29,8 +29,8 @@ public class SingleShotGun : Gun
 
         Ray ray = cam.ViewportPointToRay(new Vector3(0.5f, 0.5f));
         ray.origin = cam.transform.position;
-
-        if (Physics.Raycast(ray, out RaycastHit hit))
+        float dist = ((GunInfo)itemInfo).MaxDistance;
+        if (Physics.Raycast(ray, out RaycastHit hit,dist))
         {
             Debug.Log("le pegaste a " + hit.collider.gameObject.name);
 

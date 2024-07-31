@@ -15,3 +15,6 @@ MonoBehaviour:
   ItemName: RIfle
   cooldown: 0.4
   Damege: 25
+  MaxDistance: 30
+  bullets: 10
+  reloadTime: 1.2

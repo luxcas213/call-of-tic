@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d27d67eb877d3244ebeced900c1a5b97, type: 3}
-  m_Name: Pistol
+  m_Name: sniper
   m_EditorClassIdentifier: 
-  ItemName: Pistol
-  cooldown: 0.1
-  Damege: 12
-  MaxDistance: 13
-  bullets: 12
-  reloadTime: 0.7
+  ItemName: sniper
+  cooldown: 0
+  Damege: 90
+  MaxDistance: 999
+  bullets: 1
+  reloadTime: 4

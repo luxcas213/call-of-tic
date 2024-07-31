@@ -6,4 +6,7 @@ using UnityEngine;
 public class GunInfo : ItemInfo
 {
     public float Damege;
+    public float MaxDistance;
+    public int bullets;
+    public float reloadTime;
 }
