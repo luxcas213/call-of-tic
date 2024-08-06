@@ -17,4 +17,4 @@ MonoBehaviour:
   Damege: 90
   MaxDistance: 999
   bullets: 1
-  reloadTime: 4
+  reloadTime: 2.5

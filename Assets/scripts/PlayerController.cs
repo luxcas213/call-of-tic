@@ -134,6 +134,8 @@ public class PlayerController : MonoBehaviourPunCallbacks , IDamagable
         ItemIndex = _index;
 
         items[ItemIndex].itemGameobjet.SetActive(true);
+        
+        
 
         if (PreviousItemIndex != -1)
         {
